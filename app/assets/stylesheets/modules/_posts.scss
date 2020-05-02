@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+.post{
+  border: 1px solid;
+  width: 40%;
+  margin-top: 30px;
+}
+
+.post-date{
+  color: gray;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main{
+  font-size: 20px;
+  &__header{
+    background-color:skyblue;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-weight: bold; 
+    &__title{
+    }
+    &__user{
+      display: flex;
+    &__name{
+      margin-left: 200px;
+      color: white;
+      margin-right: 5px;
+    }
+    a{
+      color: white;
+      text-decoration: none;
+    }
+      &__edit-icon{
+        margin: 0 0 0 auto;
+    }
+  }
+    &__edit-btn{
+      margin-right: 200px;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 20px;
+      border: solid 1px #38aef0;
+      color: #38aef0;
+      position: absolute;
+      right: 40px;
+      }
+    }
+  &__body{
+    background-color: lightgrey;
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    &__user{
+      padding: 20px 20px 0;
+      width: 70%;
+      margin: auto;
+      background-color: white;
+      &__image{
+        padding: 20px 20px 0;
+        height: 150px;
+      }
+      &__name{
+        padding: 20px 20px 0;
+        height: 150px;
+        &__start{
+          font-size: 15px;
+          margin-top: 5px;
+          color: gray;
+        }
+      }
+      &__messages{
+        background-color: white;
+        width: 70%;
+        margin: auto;
+        padding: 20px 20px 0;
+        overflow: scroll;
+        &__date{
+          font-size: 12px;
+          margin-bottom: 5px;
+          color: grey;
+        }
+        &__message{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
