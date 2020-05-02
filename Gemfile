@@ -64,3 +64,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
  gem 'font-awesome-sass'
  gem 'devise'
  gem 'pry-rails'
+ gem 'sqlite3', group: [:development, :test]
+gem 'pg', '>= 0.18', '< 2.0', group: :production
