@@ -1,4 +1,13 @@
 %h1 新規投稿ページ
-= form_tag('/posts', method: :post) do
-  %input{:name => "content", :type => "text"}/
-  %input{:type => "submit", :value => "投稿する"}/
+
+-# = form_with model: @post, local: true do |form|
+-#   = form.text_field :content
+-#   = form.submit '投稿する'
+
+= form_with model: @post, class: :form, local: true do |form|
+  = form.text_area :content, placeholder: :今何してる？, class: :form__text
+  = form.submit 'つぶやく', class: :form__btn
+
+-# = form_tag('/posts', method: :post) do
+-#   %input{:name => "content", :type => "text"}/
+-#   %input{:type => "submit", :value => "投稿する"}/
